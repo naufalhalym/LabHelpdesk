@@ -5,13 +5,13 @@
 <head>
     <title>
         @if (Request::is('/'))
-            KCI IT Helpdesk - Login
+            Laboratorium Helpdesk - Login
         @elseif(Request::is('registrasi'))
-            KCI IT Helpdesk - Registrasi
+            Laboratorium Helpdesk - Registrasi
         @elseif(Request::is('reset_password'))
-            KCI IT Helpdesk - Reset Password
+            Laboratorium Helpdesk - Reset Password
         @else
-            KCI IT Helpdesk
+            Laboratorium Helpdesk
         @endif
     </title>
 

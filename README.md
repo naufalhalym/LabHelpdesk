@@ -1,4 +1,4 @@
-# Sistem-Informasi-IT-Helpdesk
+<!-- # Sistem-Informasi-IT-Helpdesk
  Sistem Informasi IT Helpdesk Berbasis Web - By Rifky Yusuf Mahfuz
 
  Untuk Layanan IT Helpdesk:
@@ -30,7 +30,7 @@ Fitur Utama:
 - Notifikasi Realtime di dalam sistem Setiap ada tindakan penting (perubahan status permintaan, akun, dll.)
 - Reset Password via Email
 - Notifikasi Penting via Email (Permintaan diterima, ditolak, permintaan selesai, dll.)
-
+ -->
 
 Specs:
 - PHP 8.1.17
