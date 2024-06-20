@@ -414,7 +414,7 @@ class AdminController extends Controller
                     'ttd_menerima' => $filename_ttd_p2,
                     'yang_menerima' => $request->nip_pegawai,
                     'id_permintaan' => $request->id_permintaan,
-                    'id_stasiun' => 'JUA',
+                    'id_stasiun' => 'AX',
                     'created_at' => now(),
                 ];
             } elseif ($request->input('keperluan') == 'instalasi_software') {
@@ -428,7 +428,7 @@ class AdminController extends Controller
                     'ttd_menerima' => $filename_ttd_p2,
                     'yang_menerima' => $request->nip_pegawai,
                     'id_permintaan' => $request->id_permintaan,
-                    'id_stasiun' => 'JUA',
+                    'id_stasiun' => 'AX',
                     'created_at' => now(),
                 ];
             }
@@ -533,7 +533,7 @@ class AdminController extends Controller
                     'ttd_menerima' => $filename_ttd_p2,
                     'yang_menerima' => $request->nip_pegawai,
                     'id_permintaan' => $request->id_permintaan,
-                    'id_stasiun' => 'JUA',
+                    'id_stasiun' => 'AX',
                     'created_at' => now(),
                 ];
             } elseif ($request->input('keperluan') == 'instalasi_software') {
@@ -547,7 +547,7 @@ class AdminController extends Controller
                     'ttd_menerima' => $filename_ttd_p2,
                     'yang_menerima' => $request->nip_pegawai,
                     'id_permintaan' => $request->id_permintaan,
-                    'id_stasiun' => 'JUA',
+                    'id_stasiun' => 'AX',
                     'created_at' => now(),
                 ];
             }
@@ -701,20 +701,20 @@ class AdminController extends Controller
 
                 $formatted_id_permintaan = Str::replace('-', '/', $id_permintaan);
 
-                Mail::send(
-                    'notifikasi_email.requestor.permintaan_software_selesai',
-                    [
-                        'id_permintaan' => $id_permintaan,
-                        'id_permintaan_formatted' => $formatted_id_permintaan,
-                        'data_unit' => $data_unit,
-                        'keluhan' => $keluhan,
-                        'data_software' => $data_software
-                    ],
-                    function ($message) use ($email, $formatted_id_permintaan) {
-                        $message->to($email);
-                        $message->subject('Instalasi Software Selesai: ' . $formatted_id_permintaan);
-                    }
-                );
+                // Mail::send(
+                //     'notifikasi_email.requestor.permintaan_software_selesai',
+                //     [
+                //         'id_permintaan' => $id_permintaan,
+                //         'id_permintaan_formatted' => $formatted_id_permintaan,
+                //         'data_unit' => $data_unit,
+                //         'keluhan' => $keluhan,
+                //         'data_software' => $data_software
+                //     ],
+                //     function ($message) use ($email, $formatted_id_permintaan) {
+                //         $message->to($email);
+                //         $message->subject('Instalasi Software Selesai: ' . $formatted_id_permintaan);
+                //     }
+                // );
             } elseif ($request->selesaikan_permintaan == 'permintaan_hardware') {
                 $notifikasi = [
                     'pesan' => 'Permintaan pengecekan hardware Anda dengan ID Permintaan = ' . $id_permintaan . ' telah selesai. Silakan ambil unit di NOC. Terima kasih!',
@@ -746,20 +746,20 @@ class AdminController extends Controller
 
                 $formatted_id_permintaan = Str::replace('-', '/', $id_permintaan);
 
-                Mail::send(
-                    'notifikasi_email.requestor.permintaan_hardware_selesai',
-                    [
-                        'id_permintaan' => $id_permintaan,
-                        'id_permintaan_formatted' => $formatted_id_permintaan,
-                        'data_unit' => $data_unit,
-                        'tindak_lanjut' => $data_tindak_lanjut,
-                        'keluhan' => $keluhan
-                    ],
-                    function ($message) use ($email, $formatted_id_permintaan) {
-                        $message->to($email);
-                        $message->subject('Pengecekan Hardware Selesai: ' . $formatted_id_permintaan);
-                    }
-                );
+                // Mail::send(
+                //     'notifikasi_email.requestor.permintaan_hardware_selesai',
+                //     [
+                //         'id_permintaan' => $id_permintaan,
+                //         'id_permintaan_formatted' => $formatted_id_permintaan,
+                //         'data_unit' => $data_unit,
+                //         'tindak_lanjut' => $data_tindak_lanjut,
+                //         'keluhan' => $keluhan
+                //     ],
+                //     function ($message) use ($email, $formatted_id_permintaan) {
+                //         $message->to($email);
+                //         $message->subject('Pengecekan Hardware Selesai: ' . $formatted_id_permintaan);
+                //     }
+                // );
             }
 
 
@@ -804,19 +804,19 @@ class AdminController extends Controller
             $formatted_id_permintaan = Str::replace('-', '/', $id_permintaan);
             $keluhan = $permintaan->keluhan_kebutuhan;
 
-            Mail::send(
-                'notifikasi_email.requestor.permintaan_diterima',
-                [
-                    'id_permintaan' => $id_permintaan,
-                    'id_permintaan_formatted' => $formatted_id_permintaan,
-                    'data_unit' => $data_unit,
-                    'keluhan' => $keluhan
-                ],
-                function ($message) use ($email, $formatted_id_permintaan) {
-                    $message->to($email);
-                    $message->subject('Permintaan Pengecekan Hardware Diterima: ' . $formatted_id_permintaan);
-                }
-            );
+            // Mail::send(
+            //     'notifikasi_email.requestor.permintaan_diterima',
+            //     [
+            //         'id_permintaan' => $id_permintaan,
+            //         'id_permintaan_formatted' => $formatted_id_permintaan,
+            //         'data_unit' => $data_unit,
+            //         'keluhan' => $keluhan
+            //     ],
+            //     function ($message) use ($email, $formatted_id_permintaan) {
+            //         $message->to($email);
+            //         $message->subject('Permintaan Pengecekan Hardware Diterima: ' . $formatted_id_permintaan);
+            //     }
+            // );
 
             $update_permintaan = $this->modeladmin->update_permintaan($data, $id);
             $kirim_notifikasi = $this->modeladmin->input_notifikasi($notifikasi);

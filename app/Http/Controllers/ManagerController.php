@@ -334,18 +334,18 @@ class ManagerController extends Controller
                     ->get();
                 $formatted_id_permintaan = Str::replace('-', '/', $id_permintaan);
 
-                Mail::send(
-                    'notifikasi_email.requestor.permintaan_disetujui',
-                    [
-                        'id_permintaan' => $id_permintaan,
-                        'id_permintaan_formatted' => $formatted_id_permintaan,
-                        'data_unit' => $data_unit
-                    ],
-                    function ($message) use ($email, $formatted_id_permintaan) {
-                        $message->to($email);
-                        $message->subject('Permintaan Instalasi Software Disetujui: ' . $formatted_id_permintaan);
-                    }
-                );
+                // Mail::send(
+                //     'notifikasi_email.requestor.permintaan_disetujui',
+                //     [
+                //         'id_permintaan' => $id_permintaan,
+                //         'id_permintaan_formatted' => $formatted_id_permintaan,
+                //         'data_unit' => $data_unit
+                //     ],
+                //     function ($message) use ($email, $formatted_id_permintaan) {
+                //         $message->to($email);
+                //         $message->subject('Permintaan Instalasi Software Disetujui: ' . $formatted_id_permintaan);
+                //     }
+                // );
 
                 // kirim notifikasi ke admin
                 $id_permintaan = $request->id_permintaan;

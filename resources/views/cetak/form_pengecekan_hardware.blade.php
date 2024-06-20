@@ -14,13 +14,13 @@
     <table class="tabel" border="1" width="100%" cellpadding="0" cellspacing="0">
         <tr>
             <td rowspan="6">
-                <img src="{{ asset('custom_script/img/logo_kci.png') }}" alt="logo_kci" width="100px" height="auto">
+                <!-- <img src="{{ asset('custom_script/img/logo_kci.png') }}" alt="logo_kci" width="100px" height="auto"> -->
             </td>
-            <td rowspan="2" id="judul_dokumen">PT. KERETA COMMUTER INDONESIA</td>
+            <td rowspan="2" id="judul_dokumen">Politeknik Negeri Banjarmasin</td>
             <td id="informasi_dokumen">
                 <div class="konten">
                     <div class="kolom1">No. Dokumen</div>
-                    <div class="kolom2">: FR.KCI.0355</div>
+                    <div class="kolom2">: HS.BBC.0355</div>
                 </div>
             </td>
         </tr>
@@ -28,7 +28,7 @@
             <td id="informasi_dokumen">
                 <div class="konten">
                     <div class="kolom1">Tanggal Terbit</div>
-                    <div class="kolom2">: 25-Jul-19</div>
+                    <div class="kolom2">: 9-Jul-24</div>
                 </div>
             </td>
         </tr>
@@ -379,7 +379,7 @@
                             </span>
                             <span class="checkbox-status">
                                 <label for="">&nbsp;</label>
-                                <p class="control-name control-signature">Name & Employee ID</p>
+                                <p class="control-name control-signature">Nama & ID Pegawai</p>
                             </span>
                         </div>
                         <div class="kolom-date">
