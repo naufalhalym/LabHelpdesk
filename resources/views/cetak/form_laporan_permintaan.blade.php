@@ -13,9 +13,9 @@
     <div class="header">
         <img src="{{ asset('custom_script/img/logo_kci.png') }}" alt="Logo Perusahaan">
         <br>
-        <p id="alamat">Kantor Pusat (Stasiun Juanda)</p>
-        <p id="alamat">Jl. Ir. H. Djuanda I Kota Jakarta Pusat</p>
-        <p id="alamat">Daerah Khusus Ibukota Jakarta 10120</p>
+        <p id="alamat">Politeknik Banjarmasin</p>
+        <p id="alamat">Jl. Brig Jend. Hasan Basri, Pangeran</p>
+        <p id="alamat">Banjarmasin Utara, Kota Banjarmasin, Kalimantan Selatan 70124</p>
     </div>
     <div>
         @foreach ($data_laporan as $data)

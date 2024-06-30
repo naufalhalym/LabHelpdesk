@@ -11,11 +11,11 @@
 
 <body>
     <div class="header">
-        <img src="{{ asset('custom_script/img/logo_kci.png') }}" alt="Logo Perusahaan">
+        <img src="{{ asset('custom_script/img/logo_poliban.png') }}" alt="Logo Perusahaan">
         <br>
-        <p id="alamat">Kantor Pusat (Stasiun Juanda)</p>
-        <p id="alamat">Jl. Ir. H. Djuanda I Kota Jakarta Pusat</p>
-        <p id="alamat">Daerah Khusus Ibukota Jakarta 10120</p>
+        <p id="alamat">Politeknik Banjarmasin</p>
+        <p id="alamat">Jl. Brig Jend. Hasan Basri, Pangeran</p>
+        <p id="alamat">Banjarmasin Utara, Kota Banjarmasin, Kalimantan Selatan 70124</p>
     </div>
 
     <div class="title">
@@ -66,7 +66,7 @@
                     <tr>
                         <td>Lokasi Kerja</td>
                         <td>:</td>
-                        <td>Stasiun {{ $data->lokasi_p1 }}</td>
+                        <td>Laboratorium {{ $data->lokasi_p1 }}</td>
                     </tr>
                 </table>
             </div>
@@ -97,7 +97,7 @@
                     <tr>
                         <td>Lokasi Kerja</td>
                         <td>:</td>
-                        <td>Stasiun {{ $data->lokasi_p2 }}</td>
+                        <td>Laboratorium {{ $data->lokasi_p2 }}</td>
                     </tr>
                 </table>
             </div>
@@ -179,7 +179,7 @@
             </div>
 
             <div>
-                <p class="tanggal_ttd">Jakarta Pusat, {{ $tanggal_ttd }}</p>
+                <p class="tanggal_ttd">Banjarmasin, {{ $tanggal_ttd }}</p>
             </div>
             <div class="signature-container">
                 <div class="yang_menyerahkan">
