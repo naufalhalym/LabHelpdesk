@@ -35,7 +35,7 @@
             <div>
                 <p class="text-indent">Pada hari ini <b>{{ $hari }}</b>, tanggal <b>{{ $tanggal }}</b>
                     bulan
-                    <b>{{ $bulan }}</b> tahun <b>{{ $tahun }}</b>, di Kantor Pusat Stasiun Juanda, kami
+                    <b>{{ $bulan }}</b> tahun <b>{{ $tahun }}</b>, di Politeknik Negeri Banjarmasin, kami
                     yang
                     bertanda tangan di bawah ini:
                 </p>
@@ -220,7 +220,7 @@
                                         title="Tanda tangan {{ $data->nama_p2 }}">
                                     <figcaption>{{ $data->nama_p2 }}</figcaption>
                                 </div>
-                                <figcaption>Admin Layanan IT Helpdesk</figcaption>
+                                <figcaption>Teknisi Layanan IT Helpdesk</figcaption>
                             </div>
                         </div>
                     @else

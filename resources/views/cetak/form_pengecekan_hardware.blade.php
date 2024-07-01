@@ -16,7 +16,7 @@
             <td rowspan="6">
                 <!-- <img src="{{ asset('custom_script/img/logo_kci.png') }}" alt="logo_kci" width="100px" height="auto"> -->
             </td>
-            <td rowspan="2" id="judul_dokumen">Politeknik Negeri Banjarmasin</td>
+            <td rowspan="2" id="judul_dokumen">POLITEKNIK NEGERI BANJARMASIN</td>
             <td id="informasi_dokumen">
                 <div class="konten">
                     <div class="kolom1">No. Dokumen</div>
@@ -28,7 +28,7 @@
             <td id="informasi_dokumen">
                 <div class="konten">
                     <div class="kolom1">Tanggal Terbit</div>
-                    <div class="kolom2">: 9-Jul-24</div>
+                    <div class="kolom2">: 9-Jul-2024</div>
                 </div>
             </td>
         </tr>

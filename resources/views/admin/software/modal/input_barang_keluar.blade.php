@@ -49,7 +49,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="lokasi_p1">Lokasi</label>
+                            <label for="lokasi_p1">Laboratorium</label>
                             <input type="text" class="form-control" id="lokasi_pegawai_p1" name="lokasi_p1"
                                 placeholder="Lokasi" disabled>
                         </div>
@@ -115,7 +115,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="lokasi">Lokasi</label>
+                            <label for="lokasi">Laboratorium</label>
                             <input type="text" class="form-control" id="lokasi_pegawai" name="lokasi"
                                 placeholder="Lokasi" disabled>
                         </div>

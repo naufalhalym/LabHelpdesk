@@ -21,7 +21,7 @@
                                         <h6>Prosedur Permintaan Instalasi Software</h6><br>
                                         <span>Pengajuan Permintaan Instalasi Software</span>
                                         <ol>
-                                            <li>Pegawai Mengajukan Permintaan Instalasi Software Melalui Menu Permintaan
+                                            <li>Kepala Laboratorium Mengajukan Permintaan Instalasi Software Melalui Menu Permintaan
                                                 Layanan > Instalasi Software > Tombol Ajukan Permintaan.</li>
                                             <li>Melengkapi Form Spesifikasi PC atau Laptop yang akan dilakukan instalasi
                                                 software.</li>
@@ -34,24 +34,23 @@
                                         </ol>
                                         <span>Proses Permintaan Instalasi Software</span>
                                         <ol>
-                                            <li>Menunggu admin memproses permintaan, dapat dicek pada kolom status
+                                            <li>Menunggu teknisi memproses permintaan, dapat dicek pada kolom status
                                                 permintaan
                                                 untuk memantau progres permintaan.</li>
-                                            <li>Admin akan memilih software yang sesuai dengan permintaan dan spesifikasi PC
+                                            <li>Teknisi akan memilih software yang sesuai dengan permintaan dan spesifikasi PC
                                                 atau Laptop yang Anda ajukan.</li>
-                                            <li>Admin akan mengajukan permintaan Anda ke Manajer untuk mendapatkan
+                                            <li>Teknisi akan mengajukan permintaan Anda ke kaprodi untuk mendapatkan
                                                 persetujuan instalasi software yang diminta</li>
-                                            <li>Setelah disetujui, silakan bawa PC/Laptop yang akan dilakukan instalasi ke
-                                                NOC kantor Pusat Stasiun Juanda.</li>
-                                            <li>Setelah menyerahkan PC/Laptop ke NOC, Anda akan diberikan notifikasi bahwa
+                                            <li>Setelah disetujui, silakan bawa PC/Laptop yang akan dilakukan instalasi</li>
+                                            <li>Setelah menyerahkan PC/Laptop, Anda akan diberikan notifikasi bahwa
                                                 telah melakukan serah terima barang.</li>
                                             <li>Proses instalasi software segera dilakukan atau menunggu antrian sesuai
                                                 banyaknya permintaan.</li>
-                                            <li>Apabila menunggu antrian, maka Admin akan memberikan jangka waktu
+                                            <li>Apabila menunggu antrian, maka teknisi akan memberikan jangka waktu
                                                 penyelesaian permintaan.</li>
                                             <li>Setelah proses instalasi selesai dilakukan, Anda akan diberikan notifikasi
-                                                untuk mengambil PC/Laptop di NOC kantor Pusat Stasiun Juanda.</li>
-                                            <li>Setelah mengambil PC/Laptop di NOC, Anda akan diberikan notifikasi bahwa
+                                                untuk mengambil PC/Laptop.</li>
+                                            <li>Setelah mengambil PC/Laptop, Anda akan diberikan notifikasi bahwa
                                                 telah melakukan serah terima barang.</li>
                                             <li>Disarankan untuk selalu memantau status permintaan dan notifikasi secara
                                                 berkala untuk memantau progres permintaan.</li>
@@ -130,13 +129,13 @@
 
                                 {{-- kolom keterangan diambil dari status permintaan --}}
                                 @if ($data->status_permintaan == '1')
-                                    <td>Menunggu tanggapan Admin</td>
+                                    <td>Menunggu tanggapan teknisi</td>
                                 @elseif($data->status_permintaan == '2')
-                                    <td>Sedang diajukan ke manajer</td>
+                                    <td>Sedang diajukan ke kaprodi</td>
                                 @elseif ($data->status_permintaan == '3')
-                                    <td>Menunggu PC / Laptop diserahkan ke NOC</td>
+                                    <td>Menunggu PC / Laptop diserahkan</td>
                                 @elseif ($data->status_permintaan == '4')
-                                    <td>Unit sudah diterima, dan sedang diproses oleh Admin</td>
+                                    <td>Unit sudah diterima, dan sedang diproses oleh Teknisi</td>
                                 @elseif ($data->status_permintaan == '5')
                                     <td>Unit siap diambil</td>
                                 @elseif ($data->status_permintaan == '6')

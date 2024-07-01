@@ -74,7 +74,7 @@
                                     id="konfirmasi_{{ $data->id_permintaan }}">
                                 <label class="form-check-label text-justify"
                                     for="konfirmasi_{{ $data->id_permintaan }}">
-                                    Setujui permintaan <b>{{ $data->id_permintaan }}</b> dan akan diteruskan ke Admin
+                                    Setujui permintaan <b>{{ $data->id_permintaan }}</b> dan akan diteruskan ke Teknisi
                                     untuk melanjutkan proses instalasi.
                                 </label>
                             </div>

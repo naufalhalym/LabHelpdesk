@@ -28,7 +28,7 @@
                     </div>
 
                     <div class="form-group px-3">
-                        <div><b>Lokasi</b></div>
+                        <div><b>Laboratorium</b></div>
                         <div>{{ $data_permintaan->nama_stasiun }}</div>
                     </div>
                 </div>

@@ -77,7 +77,7 @@
                                     @enderror
                                 </div>
 
-                                <span class=" text-danger small">*NIPP harus terdaftar sebagai pegawai PT KCI</span>
+                                <span class=" text-danger small">*NIPP harus terdaftar sebagai pegawai Politeknik Negeri Banjarmasin</span>
                             </div>
 
                             <div class="col-md-5">
