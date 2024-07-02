@@ -16,11 +16,11 @@
             <td rowspan="5">
                 <!-- <img src="{{ asset('custom_script/img/logo_kci.png') }}" alt="logo_kci" width="100px" height="auto"> -->
             </td>
-            <td rowspan="2" id="judul_dokumen">PT. KERETA COMMUTER INDONESIA</td>
+            <td rowspan="2" id="judul_dokumen">POLITEKNIK NEGERI BANJARMASIN</td>
             <td id="informasi_dokumen">
                 <div class="konten">
                     <div class="kolom1">No. Dokumen</div>
-                    <div class="kolom2">: FR.KCI.0480</div>
+                    <div class="kolom2">: HS.BBC.0480</div>
                 </div>
             </td>
         </tr>
@@ -28,7 +28,7 @@
             <td id="informasi_dokumen">
                 <div class="konten">
                     <div class="kolom1">Tanggal Terbit</div>
-                    <div class="kolom2">: 12-Mar-20</div>
+                    <div class="kolom2">: 8-Jul-2024</div>
                 </div>
             </td>
         </tr>
@@ -378,13 +378,13 @@
                             </tr>
 
                             <tr>
-                                <td colspan="4">Manager IT</td>
+                                <td colspan="4">kepala program studi</td>
                             </tr>
                             <tr>
                                 <td colspan="2">Nama/Tanda Tangan</td>
                                 <td colspan="2" align="right">
                                     <div class="tanggal-otorisasi">
-                                        <div class="jarak-kiri">Jakarta, </div>
+                                        <div class="jarak-kiri">Banjarmasin, </div>
                                         @if ($otorisasi && $otorisasi->tanggal_approval)
                                             <div id="garis_bawah" class="tgl-otorisasi">
                                                 {{ date('d', strtotime($otorisasi->tanggal_approval)) }}

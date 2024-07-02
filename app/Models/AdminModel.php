@@ -157,7 +157,7 @@ class AdminModel extends Model
             $pegawaiId = $permintaan->id;
 
             // Mengirim notifikasi ke pegawai
-            $pesan = 'Permintaan instalasi software Anda dengan ID Permintaan "' . $id_permintaan . '" sedang diajukan ke Manajer. Terima kasih!';
+            $pesan = 'Permintaan instalasi software Anda dengan ID Permintaan "' . $id_permintaan . '" sedang diajukan ke kaprodi. Terima kasih!';
             $tautan = '/pegawai/permintaan_software';
 
             $kirim_notifikasi = DB::table('notifikasi')->insert([
@@ -190,7 +190,7 @@ class AdminModel extends Model
             $nama = ucwords(auth()->user()->pegawai->nama);
             $simpan_notifikasi = DB::table('notifikasi')->insert([
                 'role_id' => 3,
-                'pesan' => 'Permintaan instalasi software dengan ID Permintaan "' . $id_permintaan . '" diproses oleh ' . $nama . ' dan menunggu otorisasi dari Manajer.',
+                'pesan' => 'Permintaan instalasi software dengan ID Permintaan "' . $id_permintaan . '" diproses oleh ' . $nama . ' dan menunggu otorisasi dari Kaprodi.',
                 'tautan' => '/manager/permintaan_software',
                 'created_at' => now()
             ]);
@@ -248,7 +248,7 @@ class AdminModel extends Model
             $nama = ucwords(auth()->user()->pegawai->nama);
             $simpan_notifikasi = DB::table('notifikasi')->insert([
                 'role_id' => 3,
-                'pesan' => 'Permintaan instalasi software dengan ID Permintaan "' . $id_permintaan . '" telah direvisi oleh ' . $nama . ' dan menunggu otorisasi kembali dari Manajer.',
+                'pesan' => 'Permintaan instalasi software dengan ID Permintaan "' . $id_permintaan . '" telah direvisi oleh ' . $nama . ' dan menunggu otorisasi kembali dari kaprodi.',
                 'tautan' => '/manager/permintaan_software',
                 'created_at' => now()
             ]);
@@ -435,7 +435,7 @@ class AdminModel extends Model
             $nama = ucwords(auth()->user()->pegawai->nama);
             $simpan_notifikasi = DB::table('notifikasi')->insert([
                 'role_id' => 3,
-                'pesan' => 'Pengecekan hardware dengan ID Permintaan "' . $id_permintaan . '" telah diselesaikan oleh ' . $nama . ' dan menunggu validasi dari Manager.',
+                'pesan' => 'Pengecekan hardware dengan ID Permintaan "' . $id_permintaan . '" telah diselesaikan oleh ' . $nama . ' dan menunggu validasi dari kaprodi.',
                 'tautan' => '/manager/permintaan_hardware',
                 'created_at' => now()
             ]);
@@ -493,7 +493,7 @@ class AdminModel extends Model
             $nama = ucwords(auth()->user()->pegawai->nama);
             $simpan_notifikasi = DB::table('notifikasi')->insert([
                 'role_id' => 3,
-                'pesan' => 'Permintaan instalasi software dengan ID Permintaan "' . $id_permintaan . '" telah direvisi oleh ' . $nama . ' dan menunggu otorisasi kembali dari Manajer.',
+                'pesan' => 'Permintaan instalasi software dengan ID Permintaan "' . $id_permintaan . '" telah direvisi oleh ' . $nama . ' dan menunggu otorisasi kembali dari kaprodi.',
                 'tautan' => '/manager/permintaan_software',
                 'created_at' => now()
             ]);

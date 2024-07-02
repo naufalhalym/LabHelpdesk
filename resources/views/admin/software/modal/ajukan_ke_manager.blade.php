@@ -47,7 +47,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="lokasi">Lokasi</label>
+                            <label for="lokasi">Laboratorium</label>
                             <input type="text" class="form-control" id="lokasi_pegawai" name="lokasi"
                                 placeholder="Lokasi" disabled>
                         </div>

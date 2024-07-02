@@ -23,7 +23,7 @@
                     </div>
 
                     <div class="form-group px-4">
-                        <div><b>Lokasi</b></div>
+                        <div><b>Laboratorium</b></div>
                         <div>{{ $data->nama_stasiun }}</div>
                     </div>
 
@@ -35,7 +35,7 @@
                 @if ($data->status_approval == 'revision')
                     <div class="row">
                         <div class="form-group px-3">
-                            <div><b>Catatan dari Manager</b></div>
+                            <div><b>Catatan dari Kaprodi</b></div>
                             <div class="text-danger font-weight-bold">{{ $data->catatan }}</div>
                         </div>
                     </div>
@@ -46,7 +46,7 @@
 
         <div class="card-body">
             <div class="tombol-aksi-hardsoft">
-                <p class="text-danger small">*Cek hardware yang bermasalah, setelah itu ajukan hasil pengecekan ke Manajer
+                <p class="text-danger small">*Cek hardware yang bermasalah, setelah itu ajukan hasil pengecekan ke Kaprodi
                     untuk divalidasi</p>
                 <button class="btn btn-md btn-success  mb-3" data-bs-toggle="modal" data-bs-target="#tambah_software"><i
                         class="fas fa-plus fa-sm mr-2"></i>Cek Hardware</button>
@@ -55,7 +55,7 @@
                     <button class="btn btn-md btn-info mb-3" data-bs-toggle="modal"
                         data-bs-target="#ajukan_ke_manager_{{ $data->id_permintaan }}"
                         {{ !$isHardwareFilled ? 'disabled' : '' }}>
-                        <i class="fas fa-forward fa-sm mr-2"></i>Ajukan ke Manajer
+                        <i class="fas fa-forward fa-sm mr-2"></i>Ajukan ke Kaprodi
                     </button>
                 @endforeach
 

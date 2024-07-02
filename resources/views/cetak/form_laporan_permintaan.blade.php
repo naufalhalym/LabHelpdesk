@@ -226,7 +226,7 @@
             @endphp
 
             <div>
-                <p class="tanggal_ttd">Jakarta Pusat, {{ $tanggal_laporan }}</p>
+                <p class="tanggal_ttd">Banjarmasin, {{ $tanggal_laporan }}</p>
             </div>
 
             <div class="signature-container">
@@ -266,7 +266,7 @@
                                         title="Tanda tangan {{ $data->nama_manager }}">
                                     <figcaption>{{ $data->nama_manager }}</figcaption>
                                 </div>
-                                <figcaption>Manager IT Support</figcaption>
+                                <figcaption>Kepala Program Studi</figcaption>
                             </div>
                         </div>
                     @else

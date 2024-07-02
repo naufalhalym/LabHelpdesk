@@ -257,7 +257,7 @@ class ManagerController extends Controller
             $permintaan = $this->modelmanager->get_admin_by_id_tindaklanjut($id_permintaan);
             // $id_admin = $permintaan->id;
             $notifikasi = [
-                'pesan' => 'Manajer mengajukan revisi pada permintaan ' . $id_permintaan . '.',
+                'pesan' => 'Kaprodi mengajukan revisi pada permintaan ' . $id_permintaan . '.',
                 'tautan' => '/admin/permintaan_software',
                 'created_at' => now(),
                 'role_id' => 2,
@@ -267,7 +267,7 @@ class ManagerController extends Controller
             $update_otorisasi = $this->modelmanager->update_otorisasi($data_otorisasi, $id_otorisasi);
             $kirim_notifikasi = $this->modelmanager->input_notifikasi($notifikasi);
 
-            return $update_otorisasi && $kirim_notifikasi ? back()->with('toast_success', 'Revisi berhasil diajukan ke Admin!') : back()->with('toast_error', 'Pengajuan revisi gagal, silakan coba lagi!');
+            return $update_otorisasi && $kirim_notifikasi ? back()->with('toast_success', 'Revisi berhasil diajukan ke Teknisi!') : back()->with('toast_error', 'Pengajuan revisi gagal, silakan coba lagi!');
 
             // END OF FUNCTION
         } elseif ($request->has('otorisasi_manager')) {
@@ -351,7 +351,7 @@ class ManagerController extends Controller
                 $id_permintaan = $request->id_permintaan;
                 $permintaan = $this->modelmanager->get_admin_by_id_tindaklanjut($id_permintaan);
                 $notifikasi_admin = [
-                    'pesan' => 'Permintaan Instalasi Software dengan ID Permintaan "' . $id_permintaan . '" telah disetujui oleh Manajer. Requestor telah diberitahukan untuk menyerahkan unit ke NOC.',
+                    'pesan' => 'Permintaan Instalasi Software dengan ID Permintaan "' . $id_permintaan . '" telah disetujui oleh Kaprodi. Requestor telah diberitahukan untuk menyerahkan unit ke NOC.',
                     'tautan' => '/admin/permintaan_software',
                     'created_at' => now(),
                     'role_id' => 2,
@@ -420,26 +420,26 @@ class ManagerController extends Controller
 
                 $formatted_id_permintaan = Str::replace('-', '/', $id_permintaan);
 
-                Mail::send(
-                    'notifikasi_email.requestor.permintaan_ditolak',
-                    [
-                        'id_permintaan' => $id_permintaan,
-                        'id_permintaan_formatted' => $formatted_id_permintaan,
-                        'data_unit' => $data_unit,
-                        'otorisasi_data' => $otorisasi_data,
-                    ],
-                    function ($message) use ($email, $formatted_id_permintaan) {
-                        $message->to($email);
-                        $message->subject('Permintaan Instalasi Software Ditolak: ' . $formatted_id_permintaan);
-                    }
-                );
+                // Mail::send(
+                //     'notifikasi_email.requestor.permintaan_ditolak',
+                //     [
+                //         'id_permintaan' => $id_permintaan,
+                //         'id_permintaan_formatted' => $formatted_id_permintaan,
+                //         'data_unit' => $data_unit,
+                //         'otorisasi_data' => $otorisasi_data,
+                //     ],
+                //     function ($message) use ($email, $formatted_id_permintaan) {
+                //         $message->to($email);
+                //         $message->subject('Permintaan Instalasi Software Ditolak: ' . $formatted_id_permintaan);
+                //     }
+                // );
 
 
                 // kirim notifikasi ke admin
                 $id_permintaan = $request->id_permintaan;
                 $permintaan = $this->modelmanager->get_admin_by_id_tindaklanjut($id_permintaan);
                 $notifikasi_admin = [
-                    'pesan' => 'Permintaan Instalasi Software dengan ID Permintaan "' . $id_permintaan . '" ditolak oleh Manajer.',
+                    'pesan' => 'Permintaan Instalasi Software dengan ID Permintaan "' . $id_permintaan . '" ditolak oleh Kaprodi.',
                     'tautan' => '/admin/permintaan_hardware',
                     'created_at' => now(),
                     'role_id' => 2,
@@ -460,7 +460,7 @@ class ManagerController extends Controller
 
             if ($request->otorisasi_manager == 'disetujui') {
                 return $update_otorisasi && $update_permintaan && $kirim_notifikasi && $kirim_notifikasi_admin
-                    ? back()->with('success', 'Permintaan telah disetujui dan akan segera diproses oleh Admin!')
+                    ? back()->with('success', 'Permintaan telah disetujui dan akan segera diproses oleh Teknsi!')
                     : back()->with('error', 'Otorisasi permintaan gagal, silakan coba lagi!');
             } elseif ($request->otorisasi_manager == 'ditolak') {
                 return $update_otorisasi && $update_permintaan && $update_barang && $kirim_notifikasi && $kirim_notifikasi_admin

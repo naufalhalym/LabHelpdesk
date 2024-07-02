@@ -114,7 +114,7 @@
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label for="lokasi_pegawai">Lokasi</label>
+                            <label for="lokasi_pegawai">Laboratorium</label>
                             <input type="text" class="form-control form-control-sm" id="lokasi_pegawai"
                                 name="lokasi_pegawai" readonly value="{{ old('lokasi_pegawai') }}">
                         </div>

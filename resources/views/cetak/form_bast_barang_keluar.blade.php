@@ -178,7 +178,7 @@
                                         title="Tanda tangan {{ $data->nama_p1 }}">
                                     <figcaption>{{ $data->nama_p1 }}</figcaption>
                                 </div>
-                                <figcaption>Admin Layanan IT Helpdesk</figcaption>
+                                <figcaption>Teknisi Layanan IT Helpdesk</figcaption>
                             </div>
                         </div>
                     @else

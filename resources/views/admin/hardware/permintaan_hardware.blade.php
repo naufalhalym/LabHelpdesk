@@ -21,6 +21,7 @@
                             <th>No.</th>
                             <th>ID Permintaan</th>
                             <th>Waktu Pengajuan</th>
+                            <th>Laboratorium</th>
                             <th>Status Validasi</th>
                             <th>Status Permintaan</th>
                             <th>Waktu Penyelesaian</th>
@@ -35,6 +36,7 @@
                                 <td>{{ $no++ }}</td>
                                 <td>{{ $data->id_permintaan }}</td>
                                 <td>{{ $data->permintaan_created_at }}</td>
+                                <td>{{ $data->id_stasiun }}</td>
                                 <td>
                                     <span
                                         class="badge badge-{{ $data->status_approval == 'pending'
@@ -87,7 +89,7 @@
                                         {{ $data->status_permintaan == '1'
                                             ? 'Pending'
                                             : ($data->status_permintaan == '2'
-                                                ? 'Menunggu validasi Manajer'
+                                                ? 'Menunggu validasi Kaprodi'
                                                 : ($data->status_permintaan == '3'
                                                     ? 'Diterima'
                                                     : ($data->status_permintaan == '4'

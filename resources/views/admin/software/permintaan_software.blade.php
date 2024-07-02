@@ -21,6 +21,7 @@
                             <th>No.</th>
                             <th>ID Permintaan</th>
                             <th>Waktu Pengajuan</th>
+                            <th>Laboratorium</th>
                             {{-- <th>Kebutuhan</th> --}}
                             <th>Status Otorisasi</th>
                             <th>Status Permintaan</th>
@@ -36,6 +37,7 @@
                                 <td>{{ $no++ }}</td>
                                 <td>{{ $data->id_permintaan }}</td>
                                 <td>{{ $data->permintaan_created_at }}</td>
+                                <td>{{ $data->id_stasiun }}</td>
                                 {{-- <td>{{ $data->keluhan_kebutuhan }}</td> --}}
                                 <td>
                                     <span

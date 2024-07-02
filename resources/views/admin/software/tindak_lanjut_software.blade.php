@@ -23,7 +23,7 @@
                     </div>
 
                     <div class="form-group px-4">
-                        <div><b>Lokasi</b></div>
+                        <div><b>Laboratorium</b></div>
                         <div>{{ $data->nama_stasiun }}</div>
                     </div>
 
@@ -53,7 +53,7 @@
                 @if ($data->status_approval == 'revision')
                     <div class="row">
                         <div class="form-group px-3">
-                            <div><b>Catatan dari Manajer</b></div>
+                            <div><b>Catatan dari Kaprodi</b></div>
                             <div class="text-danger font-weight-bold">"{{ $data->catatan }}"</div>
                         </div>
                     </div>
@@ -64,14 +64,14 @@
 
         <div class="card-body">
             <div class="tombol-aksi-hardsoft">
-                <p class="text-danger small">*Tambah software yang akan diinstal, setelah itu ajukan ke Manajer</p>
+                <p class="text-danger small">*Tambah software yang akan diinstal, setelah itu ajukan ke Kaprodi</p>
                 <button class="btn btn-md btn-success  mb-3" data-bs-toggle="modal" data-bs-target="#tambah_software"><i
                         class="fas fa-plus fa-sm mr-2"></i>Tambah Software</button>
                 @foreach ($permintaan as $data)
                     <button class="btn btn-md btn-info mb-3" data-toggle="modal"
                         data-target="#ajukan_ke_manager_{{ $data->id_permintaan }}"
                         {{ !$isSoftwareFilled ? 'disabled' : '' }}>
-                        <i class="fas fa-forward fa-sm mr-2"></i>Ajukan ke Manajer
+                        <i class="fas fa-forward fa-sm mr-2"></i>Ajukan ke Kaprodi
                     </button>
                 @endforeach
 

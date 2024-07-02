@@ -50,7 +50,7 @@
 
                         {{-- OPSI LOKASI DENGAN DATALIST --}}
                         <div class="form-group">
-                            <label for="lokasi_pegawai">Lokasi</label>
+                            <label for="lokasi_pegawai">Laboratorium</label>
                             <input list="stasiun_list" class="form-control" placeholder="-Pilih Lokasi-" required
                                 id="lokasi_pegawai_update" name="lokasi_pegawai_update"
                                 value="{{ $pegawai->nama_stasiun }}">

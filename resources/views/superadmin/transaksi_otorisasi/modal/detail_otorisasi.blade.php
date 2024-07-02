@@ -41,7 +41,7 @@
 
 
                         <div id="detail_pegawai">
-                            <h6>Disetujui oleh Manajer</h6>
+                            <h6>Disetujui oleh Kaprodi</h6>
                             <div class="row">
                                 <div class="form-group col-sm-5">
                                     <label for="nip">NIP</label>
@@ -70,13 +70,13 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="lokasi">Lokasi</label>
+                                <label for="lokasi">Laboratorium</label>
                                 <input type="text" class="form-control" value="{{ $data->lokasi_manager }}" disabled>
                             </div>
                             <hr>
 
                             <div class="form-group text-center">
-                                <figcaption class="mb-2">Tanda Tangan Manajer</figcaption>
+                                <figcaption class="mb-2">Tanda Tangan Kaprodi</figcaption>
                                 <div class="border rounded p-2">
                                     <img class="gambar_ttd"
                                         src="{{ asset('tandatangan/instalasi_software/manager/' . $data->ttd_manager) }}"
@@ -140,7 +140,7 @@
                         <hr>
 
                         <div id="detail_pegawai">
-                            <h6>Divalidasi oleh Manajer:</h6>
+                            <h6>Divalidasi oleh Kaprodi:</h6>
                             <div class="row">
                                 <div class="form-group col-sm-5">
                                     <label for="nip">NIP</label>
@@ -176,7 +176,7 @@
                             <hr>
 
                             <div class="form-group text-center">
-                                <figcaption class="mb-2">Tanda Tangan Manajer</figcaption>
+                                <figcaption class="mb-2">Tanda Tangan Kaprodi</figcaption>
                                 <div class="border rounded p-2">
                                     <img class="gambar_ttd"
                                         src="{{ asset('tandatangan/pengecekan_hardware/manager/' . $data->ttd_manager) }}"

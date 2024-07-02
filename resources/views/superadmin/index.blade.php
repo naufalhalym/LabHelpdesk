@@ -43,7 +43,7 @@
         <hr>
 
         <div class="mt-2">
-            <h4 class="text-center">Jumlah Pegawai Per Stasiun</h4>
+            <h4 class="text-center">Jumlah Pegawai Per Laboratorium </h4>
             <div class="row justify-content-center">
                 <div class="col-2 text-center">
                     <label for="start-range-input">Rentang Awal:</label>

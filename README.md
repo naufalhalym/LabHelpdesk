@@ -8,7 +8,7 @@
  - Permintaan Instalasi Software
  - Permintaan Pengecekan Hardware
 
-2. Admin
+2. Teknisi
    Menindaklanjuti permintaan:
  - Menerima Permintaan Instalasi Software
  - Menerima Permintaan Pengecekan Hardware

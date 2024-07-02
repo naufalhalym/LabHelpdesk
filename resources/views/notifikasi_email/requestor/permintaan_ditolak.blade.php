@@ -100,7 +100,7 @@
                 Anda menerima email ini sebagai pemberitahuan tentang perubahan penting pada layanan IT Helpdesk yang
                 Anda ajukan.
             </p>
-            <p>© 2023 Layanan IT Helpdesk, Kantor Pusat, Jl. Ir H. Juanda I, Stasiun Juanda, Jakarta Pusat, 10120
+            <p>© 2024 Layanan IT Helpdesk, Politeknik Negeri Banjarmasin
             </p>
         </div>
     </div>

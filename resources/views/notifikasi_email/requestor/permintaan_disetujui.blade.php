@@ -74,7 +74,7 @@
                         <img src="https://commuterline.id/img/kci_logo.png">
                     </td>
                     <td class="spasi-header">
-                        <h3>SISTEM INFORMASI IT HELPDESK - PT KCI</h3>
+                        <h3>SISTEM INFORMASI IT HELPDESK - Politeknik Negeri Banjarmasin</h3>
                     </td>
                 </tr>
                 <tr>
@@ -87,7 +87,7 @@
             <h4>PERMINTAAN INSTALASI SOFTWARE</h4>
             <p>Permintaan Instalasi Software dengan ID Permintaan <strong>"{{ $id_permintaan_formatted }}"</strong>
                 telah disetujui.</p>
-            <p>Segera serahkan unit yang akan dilakukan instalasi ke kantor pusat (NOC).</p>
+            <p>Segera serahkan unit yang akan dilakukan instalasi.</p>
             <h4>Data Unit Sesuai Permintaan:</h4>
             <table class="center-table tabel">
                 <thead>
@@ -123,7 +123,7 @@
                 Anda
                 ajukan.
             </p>
-            <p>© 2023 Layanan IT Helpdesk, Kantor Pusat, Jl. Ir H. Juanda I, Stasiun Juanda, Jakarta Pusat, 10120
+            <p>© 2024 Layanan IT Helpdesk, Politeknik Neger Banjarmasin
             </p>
         </div>
     </div>
