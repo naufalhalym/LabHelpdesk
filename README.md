@@ -4,6 +4,7 @@
  Untuk Layanan IT Helpdesk:
 1. Pegawai
    Mengajukan:
+   meminta:
  - Permintaan Instalasi Software
  - Permintaan Pengecekan Hardware
 

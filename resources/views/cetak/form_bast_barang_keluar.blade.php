@@ -148,7 +148,7 @@
 
                     </tr>
                 </table>
-            </div>
+            </div>          
 
             <div>
                 <p class="text-indent">
