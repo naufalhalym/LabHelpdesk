@@ -6,7 +6,7 @@
         <div class="card-header py-3">
             <div class="row">
                 <h4 class="card-title mx-2">Informasi Permintaan</h4>
-                <p class="small text-gray-800">Permintaan yang telah divalidasi & diotorisasi Manajer</p>
+                <p class="small text-gray-800">Permintaan yang telah divalidasi & diotorisasi Kaprodi</p>
             </div>
         </div>
         <div class="card-body">

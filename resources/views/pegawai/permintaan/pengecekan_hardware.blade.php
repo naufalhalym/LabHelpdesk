@@ -21,7 +21,7 @@
                                         <h6>Prosedur Permintaan Pengecekan Hardware</h6><br>
                                         <span>Pengajuan Permintaan Pengecekan Hardware</span>
                                         <ol>
-                                            <li>Pegawai mengajukan permintaan pengecekan hardware melalui menu Permintaan
+                                            <li>Kepala Laboratorium mengajukan permintaan pengecekan hardware melalui menu Permintaan
                                                 Layanan > Pengecekan Hardware > Tombol Ajukan Permintaan.</li>
                                             <li>Melengkapi data hardware yang akan dilakukan pengecekan.</li>
                                             <li>Menandatangani form secara digital pada kolom input tanda tangan yang telah
@@ -33,18 +33,18 @@
                                         <ol>
                                             <li>Menunggu admin menanggapi permintaan, dapat dicek pada kolom status
                                                 permintaan untuk memantau progres permintaan.</li>
-                                            <li>Setelah permintaan diterima oleh Admin, segera bawa unit yang akan dilakukan
-                                                pengecekan ke NOC Kantor Pusat Stasiun Juanda.</li>
-                                            <li>Setelah menyerahkan unit ke NOC, Anda akan diberikan notifikasi bahwa telah
+                                            <li>Setelah permintaan diterima oleh Teknisi, segera bawa unit yang akan dilakukan
+                                                pengecekan.</li>
+                                            <li>Setelah menyerahkan unit, Anda akan diberikan notifikasi bahwa telah
                                                 melakukan serah terima barang.</li>
                                             <li>Admin akan melakukan pengecekan hardware sesuai keluhan.</li>
                                             <li>Admin akan memberikan rekomendasi hasil pengecekan yang telah divalidasi
-                                                oleh Manajer IT Support.</li>
-                                            <li>Rekomendasi dapat berupa perbaikan langsung oleh tim IT Support maupun
+                                                oleh Kepala program studi.</li>
+                                            <li>Rekomendasi dapat berupa perbaikan langsung oleh tim teknisi maupun
                                                 membawa unit tersebut ke service center.</li>
                                             <li>Setelah proses pengecekan dan perbaikan selesai, Anda akan diberitahukan
                                                 untuk mengambil unit yang telah selesai dilakukan pengecekan.</li>
-                                            <li>Setelah mengambil unit di NOC, Anda akan diberikan notifikasi bahwa
+                                            <li>Setelah mengambil unit, Anda akan diberikan notifikasi bahwa
                                                 telah melakukan serah terima barang.</li>
                                             <li>Disarankan untuk selalu memantau status permintaan dan notifikasi secara
                                                 berkala untuk memantau progres permintaan.</li>

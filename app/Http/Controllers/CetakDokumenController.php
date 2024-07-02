@@ -335,7 +335,7 @@ class CetakDokumenController extends Controller
         $filter = $request->jenis_filter;
 
         $notifikasi = [
-            'pesan' => 'Admin ' . $nama_admin . ' telah membuat laporan permintaan ' . $filter . ' dengan Nomor Laporan: "' . $id_laporan_baru . '" dan menunggu divalidasi oleh Manajer.',
+            'pesan' => 'Admin ' . $nama_admin . ' telah membuat laporan permintaan ' . $filter . ' dengan Nomor Laporan: "' . $id_laporan_baru . '" dan menunggu divalidasi oleh Kaprodi.',
             'tautan' => '/manager/laporan_periodik',
             'created_at' => now(),
             'role_id' => 3, //role manager
@@ -346,7 +346,7 @@ class CetakDokumenController extends Controller
         $input_laporan = $this->modelcetak->input_laporan($data);
 
 
-        return $input_laporan && $kirim_notifikasi ? back()->with('toast_success', 'Laporan ' . $filter . ' berhasil dibuat. Menunggu validasi dari Manajer!') : back()->with('toast_error', 'Laporan gagal dibuat');
+        return $input_laporan && $kirim_notifikasi ? back()->with('toast_success', 'Laporan ' . $filter . ' berhasil dibuat. Menunggu validasi dari Kaprodi!') : back()->with('toast_error', 'Laporan gagal dibuat');
     }
 
     public function cetak_laporan_periodik($id_laporan)

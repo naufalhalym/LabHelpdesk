@@ -33,7 +33,7 @@
                                 readonly value="">
                         </div>
                         <div class="form-group">
-                            <label for="nama_stasiun">Lokasi</label>
+                            <label for="nama_stasiun">Laboratorium</label>
                             <input type="text" class="form-control form-control-sm" id="nama_stasiun"
                                 name="nama_stasiun" readonly value="">
                         </div>

@@ -69,7 +69,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="lokasi">Lokasi</label>
+                                <label for="lokasi">Laboratorium</label>
                                 <input type="text" class="form-control" value="{{ $data->lokasi_admin }}" disabled>
                             </div>
                             <hr>
@@ -167,7 +167,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="lokasi">Lokasi</label>
+                                <label for="lokasi">Laboratorium</label>
                                 <input type="text" class="form-control" value="{{ $data->lokasi_admin }}"
                                     disabled>
                             </div>

@@ -89,7 +89,7 @@
                                         {{ $data->status_permintaan == '1'
                                             ? 'Pending'
                                             : ($data->status_permintaan == '2'
-                                                ? 'Menunggu validasi Manajer'
+                                                ? 'Menunggu validasi Kaprodi'
                                                 : ($data->status_permintaan == '3'
                                                     ? 'Diterima'
                                                     : ($data->status_permintaan == '4'

@@ -46,7 +46,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="lokasi_pegawai">Lokasi</label>
+                        <label for="lokasi_pegawai">Laboratorium</label>
                         <input required placeholder="-Pilih Lokasi-" list="stasiun_list" class="form-control"
                             id="lokasi_pegawai" name="lokasi_pegawai" value="{{ old('lokasi_pegawai') }}">
                         <datalist id="stasiun_list">
