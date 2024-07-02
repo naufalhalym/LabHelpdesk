@@ -28,7 +28,7 @@
                                     <th>Nama</th>
                                     <th>Bagian</th>
                                     <th>Jabatan</th>
-                                    <th>Lokasi</th>
+                                    <th>Laboratorium</th>
                                     <th class="text-center">Akses Sistem</th>
                                     <th class="text-center">Aksi</th>
                                 </tr>

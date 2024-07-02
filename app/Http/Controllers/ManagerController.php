@@ -420,19 +420,19 @@ class ManagerController extends Controller
 
                 $formatted_id_permintaan = Str::replace('-', '/', $id_permintaan);
 
-                Mail::send(
-                    'notifikasi_email.requestor.permintaan_ditolak',
-                    [
-                        'id_permintaan' => $id_permintaan,
-                        'id_permintaan_formatted' => $formatted_id_permintaan,
-                        'data_unit' => $data_unit,
-                        'otorisasi_data' => $otorisasi_data,
-                    ],
-                    function ($message) use ($email, $formatted_id_permintaan) {
-                        $message->to($email);
-                        $message->subject('Permintaan Instalasi Software Ditolak: ' . $formatted_id_permintaan);
-                    }
-                );
+                // Mail::send(
+                //     'notifikasi_email.requestor.permintaan_ditolak',
+                //     [
+                //         'id_permintaan' => $id_permintaan,
+                //         'id_permintaan_formatted' => $formatted_id_permintaan,
+                //         'data_unit' => $data_unit,
+                //         'otorisasi_data' => $otorisasi_data,
+                //     ],
+                //     function ($message) use ($email, $formatted_id_permintaan) {
+                //         $message->to($email);
+                //         $message->subject('Permintaan Instalasi Software Ditolak: ' . $formatted_id_permintaan);
+                //     }
+                // );
 
 
                 // kirim notifikasi ke admin
