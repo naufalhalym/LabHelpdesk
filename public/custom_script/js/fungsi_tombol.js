@@ -125,7 +125,7 @@ function instalasi_selesai(id) {
 function terima_permintaan(id) {
     Swal.fire({
         title: 'Terima Permintaan',
-        html: '<div style="text-align: center;">Terima permintaan pengecekan hardware. <br> Status permintaan akan diubah dan requestor akan mendapatkan notifikasi untuk menyerahkan unit yang akan dicek ke NOC.</div>',
+        html: '<div style="text-align: center;">Terima permintaan pengecekan hardware. <br> Status permintaan akan diubah dan requestor akan mendapatkan notifikasi untuk menyerahkan unit.</div>',
         icon: 'question',
         showCancelButton: true,
         confirmButtonText: 'Ya',

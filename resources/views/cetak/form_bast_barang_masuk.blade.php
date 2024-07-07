@@ -220,7 +220,7 @@
                                         title="Tanda tangan {{ $data->nama_p2 }}">
                                     <figcaption>{{ $data->nama_p2 }}</figcaption>
                                 </div>
-                                <figcaption>Teknisi Layanan IT Helpdesk</figcaption>
+                                <figcaption>Teknisi Laboratorium Helpdesk</figcaption>
                             </div>
                         </div>
                     @else

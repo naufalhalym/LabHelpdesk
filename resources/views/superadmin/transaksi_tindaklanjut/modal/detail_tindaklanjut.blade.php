@@ -42,7 +42,7 @@
                         <hr>
 
                         <div id="detail_pegawai">
-                            <h6>Diproses oleh Admin</h6>
+                            <h6>Diproses oleh Teknisi</h6>
                             <div class="row">
                                 <div class="form-group col-sm-5">
                                     <label for="nip">NIP</label>

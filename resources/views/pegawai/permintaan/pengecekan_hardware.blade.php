@@ -125,11 +125,11 @@
                                 @if ($data->status_permintaan == '1')
                                     <td class="text-center">-</td>
                                 @elseif($data->status_permintaan == '2')
-                                    <td>Unit sudah diterima, dan sedang diproses oleh admin</td>
+                                    <td>Unit sudah diterima, dan sedang diproses oleh Teknisi</td>
                                 @elseif ($data->status_permintaan == '3')
-                                    <td>Menunggu unit yang akan dicek diserahkan ke NOC</td>
+                                    <td>Menunggu unit yang akan dicek diserahkan</td>
                                 @elseif ($data->status_permintaan == '4')
-                                    <td>Unit sudah diterima, dan sedang diproses oleh admin</td>
+                                    <td>Unit sudah diterima, dan sedang diproses oleh Teknisi</td>
                                 @elseif ($data->status_permintaan == '5')
                                     <td>Pengecekan selesai, Unit siap diambil</td>
                                 @elseif ($data->status_permintaan == '6')

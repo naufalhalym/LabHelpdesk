@@ -15,8 +15,7 @@
                                 <div class="p-5">
                                     <div class="text-center mb-4">
                                         <img src="{{ asset('custom_script/img/logo_it_helpdesk.png') }}" width="150px">
-                                        <p style="letter-spacing: 1px" class="text-muted mt-4 font-italic">Sistem Informasi
-                                            Layanan IT Helpdesk</p>
+                                        <p style="letter-spacing: 1px" class="text-muted mt-4 font-italic">Laboratorium Helpdesk</p>
                                     </div>
                                     <form action="/" method="POST">
                                         @csrf

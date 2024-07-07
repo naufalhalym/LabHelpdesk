@@ -235,7 +235,7 @@
                         <div>
                             <div class="kotak-ttd">
                                 <div class="isi-ttd">
-                                    <figcaption>Dibuat oleh Admin:</figcaption>
+                                    <figcaption>Dibuat oleh Teknisi:</figcaption>
                                     <img class="gambar_ttd"
                                         src="{{ asset('tandatangan/laporan_permintaan/admin/' . $data->ttd_admin) }}"
                                         title="Tanda tangan {{ $data->nama_admin }}">
@@ -247,7 +247,7 @@
                     @else
                         <div>
                             <div class="kotak-ttd">
-                                <figcaption>Dibuat oleh Admin:</figcaption>
+                                <figcaption>Dibuat oleh Teknisi:</figcaption>
                             </div>
                         </div>
                     @endif

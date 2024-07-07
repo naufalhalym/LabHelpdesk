@@ -663,7 +663,7 @@ class AdminController extends Controller
 
             if ($request->selesaikan_permintaan == 'permintaan_software') {
                 $notifikasi = [
-                    'pesan' => 'Permintaan instalasi software Anda dengan ID Permintaan = ' . $id_permintaan . ' telah selesai. Silakan ambil PC / Laptop Anda di NOC. Terima kasih!',
+                    'pesan' => 'Permintaan instalasi software Anda dengan ID Permintaan = ' . $id_permintaan . ' telah selesai Terima kasih!',
                     'tautan' => '/pegawai/permintaan_software',
                     'created_at' => now(),
                     'user_id' => $pegawaiId,
@@ -717,7 +717,7 @@ class AdminController extends Controller
                 // );
             } elseif ($request->selesaikan_permintaan == 'permintaan_hardware') {
                 $notifikasi = [
-                    'pesan' => 'Permintaan pengecekan hardware Anda dengan ID Permintaan = ' . $id_permintaan . ' telah selesai. Silakan ambil unit di NOC. Terima kasih!',
+                    'pesan' => 'Permintaan pengecekan hardware Anda dengan ID Permintaan = ' . $id_permintaan . ' telah selesai.Terima kasih!',
                     'tautan' => '/pegawai/permintaan_hardware',
                     'created_at' => now(),
                     'user_id' => $pegawaiId,
@@ -783,7 +783,7 @@ class AdminController extends Controller
             $pegawaiId = $permintaan->id;
 
             $notifikasi = [
-                'pesan' => 'Permintaan pengecekan hardware Anda dengan ID Permintaan = ' . $id_permintaan . ' telah diterima. Silakan bawa unit yang akan dicek ke NOC. Terima kasih!',
+                'pesan' => 'Permintaan pengecekan hardware Anda dengan ID Permintaan = ' . $id_permintaan . ' telah diterima. Terima kasih!',
                 'tautan' => '/pegawai/permintaan_hardware',
                 'created_at' => now(),
                 'user_id' => $pegawaiId,
