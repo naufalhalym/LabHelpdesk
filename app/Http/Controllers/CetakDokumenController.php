@@ -263,7 +263,7 @@ class CetakDokumenController extends Controller
             $kodeBulanSekarang = RomanNumberConverter::convertMonthToRoman(date('n'));
             $tahunSekarang = date('Y');
         }
-        $id_laporan_baru = sprintf('%04d', $urutanBaru) . '-KCI-LP-' . $kodeBulanSekarang . '-' . $tahunSekarang;
+        $id_laporan_baru = sprintf('%04d', $urutanBaru) . '-LHP-LP-' . $kodeBulanSekarang . '-' . $tahunSekarang;
 
         //Tanda tangan yang menyerahkan barang / Pihak Pertama / P1
         $folderPath_p1 = public_path('tandatangan/laporan_permintaan/admin/');

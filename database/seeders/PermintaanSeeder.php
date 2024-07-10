@@ -35,7 +35,7 @@ class PermintaanSeeder extends Seeder
             $randomStatus = (rand(0, 1) == 0) ? 'diterima' : 'dikembalikan';
 
             $barangData[] = [
-                'kode_barang' => 'KCI-213' . $i,
+                'kode_barang' => 'LHP-213' . $i,
                 'nama_barang' => 'Nama Barang ' . $i,
                 'prosesor' => 'Prosesor ' . $i,
                 'ram' =>  $i . 'GB',
@@ -45,7 +45,7 @@ class PermintaanSeeder extends Seeder
                 'created_at' => $randomDate,
             ];
 
-            $newIdPermintaan = sprintf('%04d', $i) . '-KCI-ITHELPDESK-' . RomanNumberConverter::convertMonthToRoman(date('n')) . '-' . date('Y');
+            $newIdPermintaan = sprintf('%04d', $i) . '-LHP-HELPDESK-' . RomanNumberConverter::convertMonthToRoman(date('n')) . '-' . date('Y');
 
             $randomTipePermintaan = (rand(0, 1) == 0) ? 'software' : 'hardware';
             $randomStatusPermintaan = (string) rand(0, 6);
@@ -68,7 +68,7 @@ class PermintaanSeeder extends Seeder
                 'id' => 1,
                 'id_kategori' => $kategoriSoftwareId,
                 'id_otorisasi' => $nextOtorisasiId,
-                'kode_barang' => 'KCI-213' . $i,
+                'kode_barang' => 'LHP-213' . $i,
                 'created_at' => $randomDate,
                 'updated_at' => $randomDate,
             ];

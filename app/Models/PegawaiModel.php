@@ -194,7 +194,7 @@ class PegawaiModel extends Model
             $tahunSekarang = date('Y');
         }
 
-        $newIdPermintaan = sprintf('%04d', $urutanBaru) . '-KCI-ITHELPDESK-' . $kodeBulanSekarang . '-' . $tahunSekarang;
+        $newIdPermintaan = sprintf('%04d', $urutanBaru) . '-LHP-HELPDESK-' . $kodeBulanSekarang . '-' . $tahunSekarang;
 
         //simpan tanda tangan
         $filename = "requestor_" . $newIdPermintaan . ".png";
@@ -393,7 +393,7 @@ class PegawaiModel extends Model
             $tahunSekarang = date('Y');
         }
 
-        $newIdPermintaan = sprintf('%04d', $urutanBaru) . '-KCI-ITHELPDESK-' . $kodeBulanSekarang . '-' . $tahunSekarang;
+        $newIdPermintaan = sprintf('%04d', $urutanBaru) . '-LHP-HELPDESK-' . $kodeBulanSekarang . '-' . $tahunSekarang;
 
 
         //Tanda tangan

@@ -74,12 +74,12 @@
                         <img src="https://commuterline.id/img/kci_logo.png">
                     </td>
                     <td class="spasi-header">
-                        <h3>SISTEM INFORMASI IT HELPDESK - PT KCI</h3>
+                        <h3>SISTEM INFORMASI Laboratorium HELPDESK - Politeknik Negeri Banjarmasin</h3>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <h3>LAYANAN IT HELPDESK</h3>
+                        <h3>LAYANAN Laboratorium HELPDESK</h3>
                     </td>
                 </tr>
             </table>
@@ -97,10 +97,10 @@
         </div>
         <div class="footer">
             <p>
-                Anda menerima email ini sebagai pemberitahuan tentang perubahan penting pada layanan IT Helpdesk yang
+                Anda menerima email ini sebagai pemberitahuan tentang perubahan penting pada layanan Laboratorium Helpdesk yang
                 Anda ajukan.
             </p>
-            <p>© 2024 Layanan IT Helpdesk, Politeknik Negeri Banjarmasin
+            <p>© 2024 Layanan Laboratorium Helpdesk, Politeknik Negeri Banjarmasin
             </p>
         </div>
     </div>

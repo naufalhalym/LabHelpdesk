@@ -379,7 +379,7 @@ class AdminController extends Controller
                 $kodeBulanSekarang = RomanNumberConverter::convertMonthToRoman(date('n'));
                 $tahunSekarang = date('Y');
             }
-            $id_bast_baru = sprintf('%04d', $urutanBaru) . '-KCI-BAST-' . $kodeBulanSekarang . '-' . $tahunSekarang;
+            $id_bast_baru = sprintf('%04d', $urutanBaru) . '-LHP-BAST-' . $kodeBulanSekarang . '-' . $tahunSekarang;
 
             //Tanda tangan yang menyerahkan barang / Pihak Pertama / P1
             $folderPath_p1 = public_path('tandatangan/bast/barang_masuk/yang_menyerahkan/');
@@ -498,7 +498,7 @@ class AdminController extends Controller
                 $kodeBulanSekarang = RomanNumberConverter::convertMonthToRoman(date('n'));
                 $tahunSekarang = date('Y');
             }
-            $id_bast_baru = sprintf('%04d', $urutanBaru) . '-KCI-BAST-' . $kodeBulanSekarang . '-' . $tahunSekarang;
+            $id_bast_baru = sprintf('%04d', $urutanBaru) . '-LHP-BAST-' . $kodeBulanSekarang . '-' . $tahunSekarang;
 
             //Tanda tangan yang menyerahkan barang / Pihak Pertama / P1
             $folderPath_p1 = public_path('tandatangan/bast/barang_keluar/yang_menyerahkan/');
