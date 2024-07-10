@@ -32,14 +32,14 @@ class NotifikasiSeeder extends Seeder
             [
                 'user_id' => null,
                 'role_id' => 2,
-                'pesan' => 'Pemberitahuan untuk admin',
+                'pesan' => 'Pemberitahuan untuk teknisi',
                 'tautan' => '#',
                 'created_at' => \Carbon\Carbon::now(),
             ],
             [
                 'user_id' => null,
                 'role_id' => 2,
-                'pesan' => 'Pemberitahuan untuk admin 2',
+                'pesan' => 'Pemberitahuan untuk teknisi',
                 'tautan' => '#',
                 'created_at' => \Carbon\Carbon::now(),
             ],

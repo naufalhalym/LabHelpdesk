@@ -15,8 +15,8 @@ class RolesSeeder extends Seeder
         // Membuat data roles
         $roles = [
             ['id_role' => '1', 'nama_role' => 'superadmin'],
-            ['id_role' => '2', 'nama_role' => 'admin'],
-            ['id_role' => '3', 'nama_role' => 'manager'],
+            ['id_role' => '2', 'nama_role' => 'teknisi'],
+            ['id_role' => '3', 'nama_role' => 'kaprodi'],
             ['id_role' => '4', 'nama_role' => 'pegawai'],
         ];
 
