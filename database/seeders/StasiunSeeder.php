@@ -20,6 +20,7 @@ class StasiunSeeder extends Seeder
             ['id_stasiun' => 'AVR', 'nama_stasiun' => 'Augmanted Reality Virtual Reality'],
             ['id_stasiun' => 'RPL', 'nama_stasiun' => 'Rekayasa Perangkat Lunak'],
             ['id_stasiun' => 'KCV', 'nama_stasiun' => 'Komputasi Citra Visi'],
+            ['id_stasiun' => 'JAR', 'nama_stasiun' => 'Jaringan'],
             ['id_stasiun' => 'KMD', 'nama_stasiun' => 'Komputer Dasar']
         ];
 
