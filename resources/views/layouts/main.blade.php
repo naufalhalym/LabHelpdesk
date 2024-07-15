@@ -3,7 +3,7 @@
 
 <head>
     <title>Laboratorium Helpdesk</title>
-    <link rel="icon" href="{!! asset('custom_script/img/Logo_poliban_Commuter_kecil.png') !!}" />
+    <link rel="icon" href="{!! asset('custom_script/img/Logo_poliban.png') !!}" />
     @include('layouts.head')
 </head>
 

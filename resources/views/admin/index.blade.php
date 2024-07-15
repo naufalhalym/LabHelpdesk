@@ -70,10 +70,10 @@
                         </div>
                         <div class=" mt-2 text-center small">
                             <span class="mr-2">
-                                <i class="fas fa-circle text-success"></i> Hardware
+                                <i class="fas fa-circle text-primary"></i> Hardware
                             </span>
                             <span class="mr-2">
-                                <i class="fas fa-circle text-primary"></i> Software
+                                <i class="fas fa-circle text-success"></i> Software
                             </span>
                         </div>
                     </div>
