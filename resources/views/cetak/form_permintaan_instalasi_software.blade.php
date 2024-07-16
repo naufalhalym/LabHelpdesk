@@ -123,7 +123,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="jarak-kiri">NIK/NIPP</td>
+                    <td class="jarak-kiri">NIK/NIP</td>
                     <td>:</td>
                     <td id="garis_bawah">
                         {{ $nip }}
@@ -218,7 +218,7 @@
         <table border="0" width="100%" cellpadding="0">
             <thead>
                 <tr>
-                    <td colspan="7" class="header">ADMIN</td>
+                    <td colspan="7" class="header">Teknisi</td>
                 </tr>
                 <tr>
                     <th class="header-kolom-admin kolom_check_software">Selection</th>

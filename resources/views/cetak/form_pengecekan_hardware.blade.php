@@ -119,7 +119,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="jarak-kiri">NIK/NIPP</td>
+                    <td class="jarak-kiri">NIK/NIP</td>
                     <td>:</td>
                     <td id="garis_bawah">
                         {{ $nip }}

@@ -47,13 +47,13 @@
                         <p class="text-center">Nomor Permintaan: <b>{{ $data->id_permintaan }}</b></p>
                         <hr>
                         <div class="form-group text-center">
-                            <label for="catatan_manager_{{ $data->id_permintaan }}">Catatan</label>
+                            <label for="catatan_manager_{{ $data->id_permintaan }}">Catatan<span class="text-danger">*</span></label>
                             <textarea class="form-control catatan-manager" name="catatan_manager_{{ $data->id_permintaan }}"
                                 id="catatan_manager_{{ $data->id_permintaan }}" cols="30" rows="5"></textarea>
                         </div>
                         <hr>
                         <div class="form-group text-center">
-                            <label for="">Tanda tangan Manager</label>
+                            <label for="">Tanda tangan Kaprodi</label>
                             <div>
                                 <div id="catatan_ttd_manager_{{ $data->id_permintaan }}">Silakan tanda tangan di area
                                     kolom ini</div>

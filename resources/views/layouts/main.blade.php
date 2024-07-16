@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Laboratorium Helpdesk</title>
+    <title>Lab Helpdesk</title>
     <link rel="icon" href="{!! asset('custom_script/img/Logo_poliban.png') !!}" />
     @include('layouts.head')
 </head>

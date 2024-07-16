@@ -335,7 +335,7 @@ class CetakDokumenController extends Controller
         $filter = $request->jenis_filter;
 
         $notifikasi = [
-            'pesan' => 'Admin ' . $nama_admin . ' telah membuat laporan permintaan ' . $filter . ' dengan Nomor Laporan: "' . $id_laporan_baru . '" dan menunggu divalidasi oleh Kaprodi.',
+            'pesan' => 'Teknisi ' . $nama_admin . ' telah membuat laporan permintaan ' . $filter . ' dengan Nomor Laporan: "' . $id_laporan_baru . '" dan menunggu divalidasi oleh Kaprodi.',
             'tautan' => '/manager/laporan_periodik',
             'created_at' => now(),
             'role_id' => 3, //role manager

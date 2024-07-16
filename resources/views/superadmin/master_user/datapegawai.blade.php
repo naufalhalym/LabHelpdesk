@@ -24,7 +24,7 @@
                             <thead>
                                 <tr>
                                     <th>No.</th>
-                                    <th>NIPP</th>
+                                    <th>NIP</th>
                                     <th>Nama</th>
                                     <th>Bagian</th>
                                     <th>Jabatan</th>

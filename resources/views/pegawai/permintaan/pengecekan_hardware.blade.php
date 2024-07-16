@@ -31,14 +31,14 @@
                                         </ol>
                                         <span>Proses Permintaan Pengecekan Hardware</span>
                                         <ol>
-                                            <li>Menunggu admin menanggapi permintaan, dapat dicek pada kolom status
+                                            <li>Menunggu teknisi menanggapi permintaan, dapat dicek pada kolom status
                                                 permintaan untuk memantau progres permintaan.</li>
                                             <li>Setelah permintaan diterima oleh Teknisi, segera bawa unit yang akan dilakukan
                                                 pengecekan.</li>
                                             <li>Setelah menyerahkan unit, Anda akan diberikan notifikasi bahwa telah
                                                 melakukan serah terima barang.</li>
-                                            <li>Admin akan melakukan pengecekan hardware sesuai keluhan.</li>
-                                            <li>Admin akan memberikan rekomendasi hasil pengecekan yang telah divalidasi
+                                            <li>Teknisi akan melakukan pengecekan hardware sesuai keluhan.</li>
+                                            <li>Teknisi akan memberikan rekomendasi hasil pengecekan yang telah divalidasi
                                                 oleh Kepala program studi.</li>
                                             <li>Rekomendasi dapat berupa perbaikan langsung oleh tim teknisi maupun
                                                 membawa unit tersebut ke service center.</li>

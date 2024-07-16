@@ -24,7 +24,7 @@
                                 <hr>
                                 <div class="row">
                                     <div class="form-group col-sm-5">
-                                        <label for="nip">NIPP<span class="text-danger">*</span></label>
+                                        <label for="nip">NIP<span class="text-danger">*</span></label>
                                         <input onkeypress="return event.charCode >= 48 && event.charCode <=57"
                                             name="nip" id="nip" type="text" class="form-control"
                                             value="{{ old('nip') }}" maxlength="5" />
@@ -77,7 +77,7 @@
                                     @enderror
                                 </div>
 
-                                <span class=" text-danger small">*NIPP harus terdaftar sebagai pegawai Politeknik Negeri Banjarmasin</span>
+                                <span class=" text-danger small">*NIP harus terdaftar sebagai pegawai Politeknik Negeri Banjarmasin</span>
                             </div>
 
                             <div class="col-md-5">

@@ -197,7 +197,7 @@
 
                         <hr>
                         <div class="form-group">
-                            <label for="uraian_kebutuhan">Uraian Kebutuhan</label>
+                            <label for="uraian_kebutuhan">Uraian Kebutuhan<span class="text-danger">*</span></label>
                             <textarea class="form-control" id="uraian_kebutuhan" name="uraian_kebutuhan" rows="2"></textarea>
                         </div>
                         <div class="d-flex justify-content-end my-2" id="tombol_detail_permintaan">

@@ -28,7 +28,7 @@
                                     <th>No.</th>
                                     <th>Email</th>
                                     <th>Role</th>
-                                    <th>NIPP</th>
+                                    <th>NIP</th>
                                     <th>Nama</th>
                                     <th class="text-center">Akses Sistem</th>
                                     <th class="text-center">Aksi</th>
