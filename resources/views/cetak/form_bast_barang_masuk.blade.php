@@ -114,7 +114,7 @@
                         <th>No.</th>
                         <th id="kode_barang">Kode Barang</th>
                         <th id="nama_barang">Nama Barang</th>
-                        <th id="jumlah_barang">Jumlah Barang</th>
+                        <!-- <th id="jumlah_barang">Jumlah Barang</th> -->
                         <th id="keperluan">Keperluan</th>
                     </tr>
                     <tr>

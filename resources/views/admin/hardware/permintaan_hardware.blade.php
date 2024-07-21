@@ -12,6 +12,43 @@
                 <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#cetak_laporan_permintaan"><i
                         class="fas fa-print"></i> Laporan Periodik</button>
             </div>
+            {{-- Menambahkan prosedur --}}
+            <div class="form-group" id="informasi_software" tabindex="0">
+                <div class="accordion" id="accordionExample">
+                    <div class="card border-0 rounded">
+                        <div id="informasi_software_header" class="card-header collapsed bg-white p-1" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false">
+                            <span class="title text-info">Prosedur Tindak Lanjut Pengecekan Hardware</span>
+                        </div>
+                        <div id="collapseThree" class="collapse" data-parent="#accordionExample">
+                            <div class="border rounded">
+                                <div class="card-body">
+                                    <div class="small">
+                                        <h6>Prosedur Tindak Lanjut Pengecekan Hardware</h6><br>
+                                        <span>Menerima Pengecekan Hardware</span>
+                                        <ol>
+                                            <li>Teknisi menerima permintaan pengecekan hardware.</li>
+                                            <li>Teknisi akan membuat Berita Acara Serah Terima barang masuk</li>
+                                        </ol>
+                                        <span>Proses Lanjut Pengecekan Hardware</span>
+                                        <ol>
+                                            <li>Teknisi menerima permintaan pengecekan Hardware</li>
+                                            <li>Setelah permintaan teknisi akan mengambil barang yang akan dilakukan pengecekan dan
+                                                membuat Berita Acara Serah Terima.</li>
+                                            <li>Teknisi akan melakukan pengecekan hardware sesuai keluhan.</li>
+                                            <li>Teknisi akan memberikan rekomendasi hasil pengecekan yang telah divalidasi
+                                                oleh Kepala program studi.</li>
+                                            <li>Setelah proses pengecekan dan perbaikan selesai, akan diberitahukan
+                                                untuk mengambil unit yang telah selesai dilakukan pengecekan.</li>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{-- end of informasi prosedur --}}
         </div>
         <div class="card-body">
             <div class="table-responsive">
@@ -204,6 +241,20 @@
             </div>
         </div>
     </div>
+
+     {{-- untuk animasi expand --}}
+     <script>
+        $(document).ready(function() {
+            $('#collapseThree').on('show.bs.collapse', function() {
+                $(this).prev('#informasi_software_header').addClass('active');
+                $(this).slideDown();
+            });
+            $('#collapseThree').on('hide.bs.collapse', function() {
+                $(this).prev('#informasi_software_header').removeClass('active');
+                $(this).slideUp();
+            });
+        });
+    </script>
 
     @if (isset($data))
         @include('admin.software.modal.input_estimasi_penyelesaian')

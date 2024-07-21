@@ -12,6 +12,45 @@
                 <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#cetak_laporan_permintaan"><i
                         class="fas fa-print"></i> Laporan Periodik</button>
             </div>
+             {{-- Menambahkan prosedur --}}
+             <div class="form-group" id="informasi_software" tabindex="0">
+                <div class="accordion" id="accordionExample">
+                    <div class="card border-0 rounded">
+                        <div id="informasi_software_header" class="card-header collapsed bg-white p-1" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false">
+                            <span class="title text-info">Prosedur Tindak Lanjut Instalasi Software</span>
+                        </div>
+                        <div id="collapseThree" class="collapse" data-parent="#accordionExample">
+                            <div class="border rounded">
+                                <div class="card-body">
+                                    <div class="small">
+                                        <h6>Prosedur Tindak Lanjut Instalasi Software</h6><br>
+                                        <span>Proses Permintaan Instalasi Software</span>
+                                        <ol>
+                                            <li>Teknisi menerima permintaan instalasi Software</li>
+                                            <li>Teknisi akan memilih software yang sesuai dengan permintaan dan spesifikasi PC
+                                                atau Laptop yang Anda ajukan.</li>
+                                            <li>Teknisi akan mengajukan permintaan ke kaprodi untuk mendapatkan
+                                                persetujuan instalasi software yang diminta</li>
+                                            <li>Setelah disetujui, silakan teknisi akan mengambil barang dan membuat Berita Acara Serah Terima</li>
+                                            <li>Proses instalasi software segera dilakukan atau menunggu antrian sesuai
+                                                banyaknya permintaan.</li>
+                                            <li>Apabila menunggu antrian, maka teknisi akan memberikan jangka waktu
+                                                penyelesaian permintaan.</li>
+                                            <li>Setelah proses instalasi selesai dilakukan, Teknisi akan membuat Berita Acara Serah Terima dan menyerahkan barang..</li>
+                                            <li>Setelah mengambil PC/Laptop, Anda akan diberikan notifikasi bahwa
+                                                telah melakukan serah terima barang.</li>
+                                        </ol>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{-- end of informasi prosedur --}}
         </div>
         <div class="card-body">
             <div class="table-responsive">
@@ -169,7 +208,19 @@
             </div>
         </div>
     </div>
-
+ {{-- untuk animasi expand --}}
+ <script>
+        $(document).ready(function() {
+            $('#collapseThree').on('show.bs.collapse', function() {
+                $(this).prev('#informasi_software_header').addClass('active');
+                $(this).slideDown();
+            });
+            $('#collapseThree').on('hide.bs.collapse', function() {
+                $(this).prev('#informasi_software_header').removeClass('active');
+                $(this).slideUp();
+            });
+        });
+    </script>
     @if (isset($data))
         @include('admin.software.modal.proses_software')
         @include('admin.software.modal.detail_permintaan_software')
