@@ -121,7 +121,7 @@
                         <td>1</td>
                         <td>{{ $data->kode_barang }}</td>
                         <td>{{ $data->nama_barang }}</td>
-                        <td>{{ $data->jumlah_barang }} Unit</td>
+                        <!-- <td>{{ $data->jumlah_barang }} Unit</td> -->
                         @php
                             $nomorpermintaan = str_replace('-', '/', $data->id_permintaan);
                         @endphp
